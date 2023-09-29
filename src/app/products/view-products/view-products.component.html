@@ -1,0 +1,27 @@
+ <!-- Product section-->
+ <section class="py-5" style="min-height: 100vh;">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top " style="width: 400;height: 550px;" [src]="productDetails.image" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">{{productDetails.category}}</div>
+                <h1 class="display-5 fw-bolder">{{productDetails.title}}</h1>
+                <div class="fs-5 mb-5">
+                    <!-- <span class="text-decoration-line-through">$45.00</span> -->
+                    <span>${{productDetails.price}}</span>
+                </div>
+                <p class="lead">{{productDetails.description}}</p>
+                <div class="d-flex">
+                    <button type="button" (click)="addToCart(productDetails)">
+                        <i class="fa-solid fa-cart-shopping me-1"></i>
+                        Add to cart
+                    </button>
+                    <button type="button" (click)="addToWishlist()">
+                        <i class="fa-regular fa-heart me-1"></i>
+                        Wish list
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

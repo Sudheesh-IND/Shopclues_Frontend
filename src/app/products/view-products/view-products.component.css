@@ -1,0 +1,28 @@
+button{
+    border: none;
+    width: 150px;
+    height: 100%;
+    padding: 13px 9px 13px 9px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #24a3b5;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+button:hover{
+    outline: 3px solid #24a3b5;
+    background-color: white;
+    color: black;
+}
+p{
+    text-align: justify;
+}
+img{
+    transform: scale(90%);
+}
+img:hover{
+    transform: scale(100%);
+    transition: 0.9s ease;
+}

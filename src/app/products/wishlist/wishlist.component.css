@@ -1,0 +1,82 @@
+.container-fluid{
+    min-height: 100vh;
+}
+
+
+
+
+.card{
+    width: 250px;
+    margin: 22px;
+    text-align: center;
+    padding: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    border: 1px solid #24a3b5;
+   
+    text-align: center;
+    cursor: pointer;
+}
+.card img{
+    height: 200px;
+}
+.card img:hover{
+    transform: scale(104%);
+    transition: 0.5s ease;
+}
+button{
+    border: none;
+    width: 120px;
+    height: 50px;
+    padding: 13px 9px 13px 9px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #24a3b5;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+button:hover{
+    outline: 3px solid #24a3b5;
+    background-color: white;
+    color: black;
+}
+.sub-title{
+    margin-left: 20px;
+   
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.pro-name{
+   margin: 10px;
+   font-size: 14px;
+   font-family: 'Roboto', sans-serif;
+   color: grey;
+}
+.tag-price{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.real-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+.offer{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #24a3b5;
+}
+.wish-btn{
+    width: 150px;
+    font-size: 12px;
+    height: 40px;
+    text-align: center;
+}

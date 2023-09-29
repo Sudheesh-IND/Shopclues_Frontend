@@ -1,0 +1,135 @@
+.container-fluid{
+    min-height: 100vh;
+}
+.home-pic{
+    height: 303px;
+    /* background-color: #ff934b; */
+    margin-left: 20px;
+}
+
+.side-bar{
+    height: 367px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    margin-right: 20px;
+}
+.home-button{
+    height: 67px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    margin-left: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    
+}
+.home-button button{
+    height: 100%;
+    background-color: white;
+    border: none;
+    margin-left: 110px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    
+    
+}
+.home-button button:hover{
+    color: #24a3b5;
+    border-bottom: 3px solid #24a3b5;
+}
+.side-bar div{
+    height: 33.33%;
+    text-align: center;
+}
+.side-bar img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.side-bar img:hover {
+    -webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(0.7px);
+}
+.sub-title{
+    margin-left: 20px;
+   
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.pro-name{
+   margin: 10px;
+   font-size: 14px;
+   font-family: 'Roboto', sans-serif;
+   color: grey;
+}
+.tag-price{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.real-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+.offer{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #24a3b5;
+}
+.card{
+    width: 250px;
+    margin: 22px;
+    text-align: center;
+    padding: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    border: 1px solid #24a3b5;
+   
+    text-align: center;
+    cursor: pointer;
+}
+.card img{
+    height: 200px;
+}
+.card img:hover{
+    transform: scale(104%);
+    transition: 0.5s ease;
+}
+@media screen and (max-width:501px){
+    .home-pic{
+        height: auto;
+        /* background-color: #24a3b5; */
+        margin-left: 0;
+    }
+    .side-bar{
+        display: none;
+    }.home-button{
+      display: none;
+       
+    }.sub-title{
+        margin: 5px;
+        font-size: 10px;
+    }.carousel-inner img{
+        width: 100%;
+        margin-top: 10px;
+   
+    }#myCarousel,#myCarousel1,#myCarousel2,#myCarousel3,#myCarousel4,#myCarousel5,#myCarousel6,#myCarousel7{
+        height: auto;
+    }#myCarousel button,#myCarousel1 button,#myCarousel2 button,#myCarousel3 button,
+    #myCarousel4 button,#myCarousel5 button,#myCarousel6 button,#myCarousel7 button{
+        margin-top: 18%;
+        width: 20px;
+        height: 40px;
+    }.offer-portion div{
+        height: auto;
+    }
+    .card{
+        width: 100%;
+    }
+}

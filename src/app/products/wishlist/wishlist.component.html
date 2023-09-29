@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 d-flex flex-col flex-wrap">
+            <div class="card"  *ngFor="let product of wishlistProducts">
+                <div class=" caro-div">
+                    <img  class="img-fluid" [src]="product.image">
+                    <div>
+                      <p class="pro-name">{{product.title}}</p>
+                      
+                     </div>
+                     <span class="tag-price"> ₹399 </span><span class="real-price">1999  </span><span class="offer">80% Off</span>
+                   </div>
+                   <div class="wish-btn-div" style="display: flex;justify-content: space-between;">
+                    <button class="wish-btn">Cart</button>
+                    <button class="wish-btn" (click)="deleteItem(product.id)">Remove</button>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="wishlistProducts.length==0" style="margin-top: 200px;">
+        <div class="col-md-12 text-center">
+             <h2>No Items Found</h2>
+             <button>Shop More</button>
+        </div>
+    </div>
+</div>

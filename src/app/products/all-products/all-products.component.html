@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-12 " >
+               
+            <div class="home-pic mt-3 ">
+              
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img  src="https://cdn.shopclues.com/images/banners/2023/July/07/HB4_JDD_Web_Esha_07thJuly23.jpg" class="d-block w-100" alt="Wild Landscape"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.shopclues.com/images/banners/2023/June/19/HB2_RefurbMobile_Web_Esha_19thJune23.jpg" class="d-block w-100" alt="Camera"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.shopclues.com/images/banners/2023/June/16/HB3_Footwear_Web_Esha_16thJune23.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.shopclues.com/images/banners/2023/June/05/HB1_MegaSavingsSale_Web_SYM_05June23.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.shopclues.com/images/banners/2023/May/25/Intel_2760x690_Web.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="home-button " style="background-color: white;">
+              <button>Jaw Dropping Deals</button>
+              <button>Refurbished Mobiles</button>
+              <button>Branded Footwear</button>
+              <button>Mega Savings Sales</button>
+              <button>Intel</button>
+
+            </div>
+    </div>
+    <div class="col-md-2 ">
+        <div class="side-bar mt-3 ">
+            <div >
+                <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/2Platinum_Srushty_14April23.jpg" alt="">
+            </div>
+            <div >
+                    <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/1Platinum_Srushty_14April23.jpg" alt="">
+            </div>
+            <div >
+                    <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/3Platinum_Srushty_14April23.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 d-flex flex-col flex-wrap">
+            <div class="card" routerLink="view-product/{{product.id}}" *ngFor="let product of allProducts | filter:searchKey:'title'">
+                <div class=" caro-div">
+                  <div style="padding: 30px;">
+                    <img  class="img-fluid" [src]="product.image">
+
+                  </div>
+                    <div>
+                      <p class="pro-name">{{product.title}}</p>
+                      
+                     </div>
+                     <span class="tag-price"> ${{product.price}} </span><span class="real-price">1999  </span><span class="offer">80% Off</span>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

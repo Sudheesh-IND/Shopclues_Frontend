@@ -1,0 +1,73 @@
+.container-fluid{
+    min-height: 100vh;
+}
+
+
+
+.card{
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    border: 1px solid #24a3b5;
+    height: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+.more{
+    border: none;
+    width: 120px;
+    height: 50px;
+    padding: 13px 9px 13px 9px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #24a3b5;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+button:hover{
+    outline: 3px solid #24a3b5;
+    background-color: white;
+    color: black;
+}
+.summary{
+    
+    padding: 30px;
+    color: #24a3b5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.374);
+}
+h1,h2,h3,h4,h5{
+    letter-spacing: 3px;
+}
+h3{
+    text-transform: uppercase;
+    background-color: #24a3b5;
+    color: #ffffff;
+    padding: 20px;
+}
+.modal-header{
+    background-color: #24a3b5;
+}
+h6{
+    margin-top: 8px;
+}
+h4{
+    color: #24a3b5;
+}
+.offer{
+    border: none;
+    outline: none;
+    background-color: #24a3b5;
+    color: #ffffff;
+    font-size: 1rem;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+
+}
